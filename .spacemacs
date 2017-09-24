@@ -332,6 +332,8 @@ you should place your code here."
   (setq create-lockfiles nil)
   (setq ido-auto-merge-work-directories-length -1)
 
+  (global-set-key (kbd "<f9>") 'other-frame)
+
   (defun node-repl () (interactive)
          (pop-to-buffer (make-comint "node-repl" "node" nil "--interactive"))
          (node-repl))
@@ -373,7 +375,7 @@ This function is called at the very end of Spacemacs initialization."
  '(company-tooltip-common-selection ((t (:inherit company-tooltip-selection :weight bold :underline nil)))))
 )
 (custom-set-variables
- ;; custom-set-variables was added by Custom.
+012 ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
