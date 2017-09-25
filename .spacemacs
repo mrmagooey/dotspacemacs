@@ -332,7 +332,7 @@ you should place your code here."
   (setq tab-always-indent t)
   (setq create-lockfiles nil)
   (setq ido-auto-merge-work-directories-length -1)
-
+  
 
   (global-set-key (kbd "<f9>") 'other-frame)
 
@@ -340,6 +340,7 @@ you should place your code here."
          (pop-to-buffer (make-comint "node-repl" "node" nil "--interactive"))
          (node-repl))
 
+  (setq gofmt-show-errors 'echo)
   (add-hook 'go-mode-hook
             (lambda ()
               (progn
